@@ -3,7 +3,6 @@
 Yet another minimal startpage:
 - Font: iosevka web
 - Theme: Nightfall
-- Screen resulation: 1366x768 (change `style.css` to match yours)
 
 > **NOTE**: keep it in mind that I don't own any rights to image included in this repo.  
 > **Original repo**: [HeavyRain266/startpage](https://github.com/HeavyRain266/startpage)  
