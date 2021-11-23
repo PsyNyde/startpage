@@ -16,6 +16,7 @@ function showTime() {
 		"date"
 	).innerHTML = `${today}, ${hour}:${minute}:${second} | ${day}/${month}/${year}`;
 	setTimeout(showTime, 0);
+	
 }
 
 function addZero(i) {
@@ -45,7 +46,7 @@ lol()
 
 const f = document.getElementById('form');
 const q = document.getElementById('query');
-const se = 'https://www.google.com/search?q=';
+const se = 'https://google.com/search?q=';
 
 function submitted(event) {
   event.preventDefault();
@@ -63,5 +64,12 @@ function choosePic() {
 	var randomNum = Math.floor(Math.random() * myPix.length);
 	document.getElementById("pic").src = myPix[randomNum];
 }
-
+document.addEventListener('DOMContentLoaded', function() {
+    var image = document.getElementById('image');
+    // onClick's logic below:
+    image.addEventListener('click', function() {
+        choosePic();
+		document.getElementById("image").contentWindow.location.reload(true);
+    });
+});
 choosePic()
