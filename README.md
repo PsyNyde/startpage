@@ -14,7 +14,13 @@ Yet another minimal startpage:
 - Add more image on `assets` folder and check `line 60` on `index.js`
 - Change search engine on `line 48` in `index.js`
 
-### Preview:
+## Installation
+### Chrome:
+- Clone the repo into your directory.
+- Open `chrome://extensions/` and click `load unpacked`
+- Select the folder you've just cloned and you're done.
+
+## Preview:
 
 ![img](preview.png)
 
