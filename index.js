@@ -45,11 +45,11 @@ lol()
 
 const f = document.getElementById('form');
 const q = document.getElementById('query');
-const google = 'https://google.com/?q=';
+const se = 'https://www.google.com/search?q=';
 
 function submitted(event) {
   event.preventDefault();
-  const url = google + q.value;
+  const url = se + q.value;
   const win = window.open(url, '_blank');
   q.value = "";
   win.focus();
