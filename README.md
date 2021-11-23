@@ -5,10 +5,8 @@ Yet another minimal startpage:
 - Theme: Nightfall
 
 > **NOTE**: keep it in mind that I don't own any rights to image included in this repo.
-> 
->**Original repo**: [HeavyRain266/startpage](https://github.com/HeavyRain266/startpage)
->
->**Font**: [pvinis/iosevka-webfont](https://github.com/pvinis/iosevka-webfont)
+> **Original repo**: [HeavyRain266/startpage](https://github.com/HeavyRain266/startpage)
+> **Font**: [pvinis/iosevka-webfont](https://github.com/pvinis/iosevka-webfont)
 
 ## Configuration
 - Simply edit `style.css` and setup favourite font and colors!
@@ -18,3 +16,4 @@ Yet another minimal startpage:
 ### Preview:
 
 ![img](preview.png)
+
