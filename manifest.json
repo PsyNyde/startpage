@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "yetanotherstartpage",
+    "short_name": "startpage",
+    "version": "0.1",
+    "description": "Overrides the browsers newtab page with a custom startpage.",
+    "author": "wahidislamlinad",
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "icons": {
+        "64": "assets/icon64.png"
+      },
+    "permissions": ["storage"]
+  }
