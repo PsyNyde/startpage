@@ -21,6 +21,7 @@ function addZero(i) {
 	if (i.length < 2) i = "0" + i;
 	return i;
 }
+
 showTime();
 
 //* Random Image and On click Image change
