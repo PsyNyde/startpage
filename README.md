@@ -10,8 +10,9 @@ Yet another minimal startpage:
 
 ## Configuration
 - Simply edit `style.css` and setup favourite font and colors!
-- Add more image on `assets` folder and check `line 60` on `index.js`
-- Change search engine on `line 48` in `index.js`
+- Add more image on `assets` folder and change `index.js`
+- Change search engine in `index.js`
+- Add or remove custom search options on `Search engine` section in `index.js`
 
 ## Installation
 ### Chrome:
