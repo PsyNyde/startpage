@@ -19,6 +19,10 @@ Yet another minimal startpage:
 - Clone the repo into your directory.
 - Open `chrome://extensions/` and click `load unpacked`
 - Select the folder you've just cloned and you're done.
+### Firefox:
+- Go to this url in firefox: about:debugging#/runtime/this-firefox
+- Find the extension and copy the manifest url
+- Go into the preferences and set the homepage as the manifest url but replace the end of the url with index.html instead of manifest.json
 
 ## Preview:
 
