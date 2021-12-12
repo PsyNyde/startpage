@@ -8,7 +8,12 @@ function showTime() {
 	let day = date.toLocaleString("en", { day: "2-digit" });
 	let month = date.toLocaleString("en", { month: "2-digit" });
 	let year = date.toLocaleString("en", { year: "numeric" });
-
+	if (hour > 12) {
+		hour = hour - 12;
+	}
+	else if (hour == 0) {
+		hour = 12;
+	}
 	minute = addZero(minute);
 	second = addZero(second);
 
@@ -81,6 +86,13 @@ function submitted(event) {
 		const win = window.open(url, "_blank");
 		q.value = "";
 		win.focus();
+	} else if (q.value.startsWith("github:") || q.value.startsWith("git:")) {
+		const query = q.value.substring(q.value.indexOf(":") + 1);
+
+		const url = "https://github.com/search?q=" + query;
+		const win = window.open(url, "_blank");
+		q.value = "";
+		win.focus();
 	} else if (
 		q.value.startsWith("duckduckgo:") ||
 		q.value.startsWith("ddg:")
@@ -99,6 +111,12 @@ function submitted(event) {
 	} else if (q.value.startsWith("facebook:") || q.value.startsWith("fb:")) {
 		const query = q.value.substring(q.value.indexOf(":") + 1);
 		const url = "https://www.facebook.com/search/top/?q=" + query;
+		const win = window.open(url, "_blank");
+		q.value = "";
+		win.focus();
+	} else if (q.value.startsWith("devient:") || q.value.startsWith("dev:")) {
+		const query = q.value.substring(q.value.indexOf(":") + 1);
+		const url = "https://www.deviantart.com/search?q=" + query;
 		const win = window.open(url, "_blank");
 		q.value = "";
 		win.focus();

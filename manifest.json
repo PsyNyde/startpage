@@ -11,5 +11,12 @@
     "icons": {
         "64": "assets/icon64.png"
       },
-    "permissions": ["storage"]
-  }
+    "permissions": ["storage"],
+    
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
