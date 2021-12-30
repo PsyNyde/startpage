@@ -1,33 +1,22 @@
 //* Time function
-function showTime() {
-	const date = new Date();
+function updateClock() {
+	let date = new Date();
+	let hours = date.getHours();
+	let minutes = date.getMinutes();
 	let today = date.toLocaleString("en", { weekday: "long" });
-	let hour = date.toLocaleString("pl", { hour: "numeric" }); // uses 24h time format
-	let minute = date.toLocaleString("en", { minute: "2-digit" });
-	let second = date.toLocaleString("en", { second: "2-digit" });
-	let day = date.toLocaleString("en", { day: "2-digit" });
-	let month = date.toLocaleString("en", { month: "2-digit" });
-	let year = date.toLocaleString("en", { year: "numeric" });
-	if (hour > 12) {
-		hour = hour - 12;
-	}
-	else if (hour == 0) {
-		hour = 12;
-	}
-	minute = addZero(minute);
-	second = addZero(second);
-
+	let ampm = hours >= 12 ? "pm" : "am";
+	hours = hours % 12;
+	hours = hours ? hours : 12;
+	minutes = minutes < 10 ? `0${minutes}` : minutes;
 	document.getElementById(
 		"date"
-	).innerHTML = `${today}, ${hour}:${minute}:${second} | ${day}/${month}/${year}`;
-	setTimeout(showTime, 0);
+	).innerHTML = `${today}, ${hours}:${minutes}${ampm} |  ${date.toLocaleString(
+		"default",
+		{ month: "short", day: "numeric", year: "numeric" }
+	)}`;
+	setTimeout(updateClock, 1000);
 }
-function addZero(i) {
-	if (i.length < 2) i = "0" + i;
-	return i;
-}
-
-showTime();
+updateClock();
 
 //* Random Image and On click Image change
 var myPix = new Array(
@@ -42,27 +31,7 @@ function choosePic() {
 	var randomNum = Math.floor(Math.random() * myPix.length);
 	document.getElementById("pic").src = myPix[randomNum];
 }
-document.addEventListener("DOMContentLoaded", function () {
-	var image = document.getElementById("image");
-	// onClick's logic below:
-	image.addEventListener("click", function () {
-		choosePic();
-		document.getElementById("image").contentWindow.location.reload(true);
-	});
 
-	var icon = document.getElementById("icon");
-	// onClick's logic below:
-	icon.addEventListener("click", function () {
-		dark();
-		window.localStorage.setItem("dark-theme", true);
-	});
-	var dragTheme = window.localStorage.getItem("dark-theme");
-	if (dragTheme == "false") {
-		document.body.classList.add("light");
-	} else if (dragTheme == "false") {
-		document.body.classList.remove("light");
-	}
-});
 choosePic();
 
 //* Search box
@@ -135,14 +104,39 @@ document.body.addEventListener("keypress", function () {
 });
 
 //* Theme management functions
-//Todo: Save theme data on local storage
-function dark() {
-	document.body.classList.toggle("light");
-	if (document.getElementById("icon").innerHTML == "filter_drama") {
-		document.getElementById("icon").innerHTML = `nights_stay`;
-		window.localStorage.setItem("dark-theme", true);
-	} else {
-		document.getElementById("icon").innerHTML = `filter_drama`;
-		window.localStorage.setItem("dark-theme", false);
-	}
-}
+let darkMode = localStorage.getItem("darkMode");
+
+const enableDarkMode = () => {
+	document.querySelector("body").classList.remove("light");
+	document.querySelector("body").classList.add("dark");
+	document.getElementById("icon").innerHTML = `nights_stay`;
+	// Set localstorage to darkMode enabled
+	localStorage.setItem("darkMode", "enabled");
+};
+
+const disableDarkMode = () => {
+	document.querySelector("body").classList.remove("dark");
+	document.querySelector("body").classList.add("light");
+	document.getElementById("icon").innerHTML = `filter_drama`;
+	// Set localstorage to darkMode disabled
+	localStorage.setItem("darkMode", null);
+};
+
+darkMode === "enabled" ? enableDarkMode() : disableDarkMode();
+
+document.addEventListener("DOMContentLoaded", function () {
+	var image = document.getElementById("image");
+	// onClick's logic below:
+	image.addEventListener("click", function () {
+		choosePic();
+		document.getElementById("image").contentWindow.location.reload(true);
+	});
+
+	var icon = document.getElementById("icon");
+	// onClick's logic below:
+	icon.addEventListener("click", function () {
+		darkMode = localStorage.getItem("darkMode");
+
+		darkMode !== "enabled" ? enableDarkMode() : disableDarkMode();
+	});
+});
