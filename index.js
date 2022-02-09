@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// onClick's logic below:
 	image.addEventListener("click", function () {
 		choosePic();
-		document.getElementById("image").contentWindow.location.reload(true);
+		//document.getElementById("image").contentWindow.location.reload(true); why the hell it didn't work without this before but works fine now -,-😪 & also gives errors -,- btw byeeee
 	});
 
 	var icon = document.getElementById("icon");
