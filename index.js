@@ -104,6 +104,8 @@ document.body.addEventListener("keypress", function () {
 });
 
 //* Theme management functions
+
+//spawn the dark mode storage ;p
 let darkMode = localStorage.getItem("darkMode");
 
 const enableDarkMode = () => {
