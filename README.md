@@ -2,10 +2,10 @@
 <!-- BADGES -->
 <div align="center">
    <p></p>
-   <a href="https://github.com/WahidIslamLinad/startpage">
+   <a href="https://github.com/WahidIslamLinad/startpage/stargazers">
       <img src="https://img.shields.io/github/stars/WahidIslamLinad/startpage?color=%23ffb29b&labelColor=%230B0F10&style=for-the-badge">
    </a>
-   <a href="https://github.com/janleigh/dotfiles/network/members/">
+   <a href="https://github.com/WahidIslamLinad/startpage/network/members/">
       <img src="https://img.shields.io/github/forks/WahidIslamLinad/startpage?color=%237ba5dd&labelColor=%230B0F10&style=for-the-badge">
    </a>
    <img src="https://img.shields.io/github/repo-size/WahidIslamLinad/startpage?color=%23ee6a70&labelColor=%230B0F10&style=for-the-badge">
