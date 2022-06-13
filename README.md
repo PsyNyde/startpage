@@ -2,17 +2,17 @@
 <!-- BADGES -->
 <div align="center">
    <p></p>
-   <a href="https://github.com/WahidIslamLinad/startpage/stargazers">
-      <img src="https://img.shields.io/github/stars/WahidIslamLinad/startpage?color=%23ffb29b&labelColor=%230B0F10&style=for-the-badge">
+   <a href="https://github.com/ThatOneQuark/startpage/stargazers">
+      <img src="https://img.shields.io/github/stars/ThatOneQuark/startpage?color=%23ffb29b&labelColor=%230B0F10&style=for-the-badge">
    </a>
-   <a href="https://github.com/WahidIslamLinad/startpage/network/members/">
-      <img src="https://img.shields.io/github/forks/WahidIslamLinad/startpage?color=%237ba5dd&labelColor=%230B0F10&style=for-the-badge">
+   <a href="https://github.com/ThatOneQuark/startpage/network/members/">
+      <img src="https://img.shields.io/github/forks/ThatOneQuark/startpage?color=%237ba5dd&labelColor=%230B0F10&style=for-the-badge">
    </a>
-   <img src="https://img.shields.io/github/repo-size/WahidIslamLinad/startpage?color=%23ee6a70&labelColor=%230B0F10&style=for-the-badge">
+   <img src="https://img.shields.io/github/repo-size/ThatOneQuark/startpage?color=%23ee6a70&labelColor=%230B0F10&style=for-the-badge">
    <!--<a href="https://discord.gg/2RfJb3CVfb">
       <img src="https://img.shields.io/discord/723849691552284772?color=cb92f2&labelColor=0B0F10&style=for-the-badge"/>
    </a> -->
-	<img src="https://badges.pufler.dev/visits/smolbit/startpage?style=for-the-badge&color=91e6b1&logoColor=white&labelColor=0B0F10"/>
+	<img src="https://badges.pufler.dev/visits/ThatOneQuark/startpage?style=for-the-badge&color=91e6b1&logoColor=white&labelColor=0B0F10"/>
    <br>
 </div>
 
