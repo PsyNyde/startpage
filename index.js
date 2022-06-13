@@ -14,7 +14,7 @@ function updateClock() {
 		"default",
 		{ month: "short", day: "numeric", year: "numeric" }
 	)}`;
-	setTimeout(updateClock, 1000);
+	setTimeout(updateClock, 10000);
 }
 updateClock();
 
@@ -37,7 +37,7 @@ choosePic();
 //* Search box
 const f = document.getElementById("form");
 const q = document.getElementById("query");
-const se = "https://google.com/search?q=";
+const se = "https://yetanothergoogle.herokuapp.com/search?q=";
 
 function submitted(event) {
 	event.preventDefault();
