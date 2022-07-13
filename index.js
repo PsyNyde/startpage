@@ -103,28 +103,34 @@ document.body.addEventListener("keypress", function () {
 	document.getElementById("query").focus();
 });
 
-//* Theme management functions
 
+//* Theme management functions
 //spawn the dark mode storage ;p
 let darkMode = localStorage.getItem("darkMode");
 
 const enableDarkMode = () => {
-	document.querySelector("body").classList.remove("light");
-	document.querySelector("body").classList.add("dark");
+	// document.querySelector("body").classList.remove("light");
+	// document.querySelector("body").classList.add("dark");
+	document.documentElement.setAttribute("color-mode", "light");
 	document.getElementById("icon").innerHTML = `nights_stay`;
 	// Set localstorage to darkMode enabled
 	localStorage.setItem("darkMode", "enabled");
 };
 
 const disableDarkMode = () => {
-	document.querySelector("body").classList.remove("dark");
-	document.querySelector("body").classList.add("light");
+	// document.querySelector("body").classList.remove("dark");
+	// document.querySelector("body").classList.add("light");
+	document.documentElement.setAttribute("color-mode", "dark");
 	document.getElementById("icon").innerHTML = `filter_drama`;
 	// Set localstorage to darkMode disabled
-	localStorage.setItem("darkMode", null);
+	localStorage.setItem("darkMode", "disabled");
 };
 
-darkMode === "enabled" ? enableDarkMode() : disableDarkMode();
+if((darkMode == "enabled") || (window.matchMedia('(prefers-color-scheme: dark)').matches && darkMode !== "disabled")){
+	enableDarkMode();
+  } else {
+	disableDarkMode();
+}
 
 document.addEventListener("DOMContentLoaded", function () {
 	var image = document.getElementById("image");
