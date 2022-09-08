@@ -2,25 +2,25 @@
 <!-- BADGES -->
 <div align="center">
    <p></p>
-   <a href="https://github.com/SimplyVoid/startpage/stargazers">
-      <img src="https://img.shields.io/github/stars/SimplyVoid/startpage?color=%23ffb29b&labelColor=%230B0F10&style=for-the-badge">
+   <a href="#">
+      <img src="https://img.shields.io/github/stars/simplyvoid/startpage?color=%23ac4142&labelColor=%23151515&style=for-the-badge">
    </a>
-   <a href="https://github.com/SimplyVoidstartpage/network/members/">
-      <img src="https://img.shields.io/github/forks/SimplyVoid/startpage?color=%237ba5dd&labelColor=%230B0F10&style=for-the-badge">
+   <a href="https://github.com/WahidIslamLinad/startpage/network/members/">
+      <img src="https://img.shields.io/github/forks/simplyvoid/startpage?color=%236a9fb5&labelColor=%23151515&style=for-the-badge">
    </a>
-   <img src="https://img.shields.io/github/repo-size/SimplyVoid/startpage?color=%23ee6a70&labelColor=%230B0F10&style=for-the-badge">
+   <img src="https://img.shields.io/github/repo-size/simplyvoid/startpage?color=%23d0d0d0&labelColor=%23151515&style=for-the-badge">
    <!--<a href="https://discord.gg/2RfJb3CVfb">
-      <img src="https://img.shields.io/discord/723849691552284772?color=cb92f2&labelColor=0B0F10&style=for-the-badge"/>
+      <img src="https://img.shields.io/discord/723849691552284772?color=cb92f2&labelColor=151515&style=for-the-badge"/>
    </a> -->
-	<img src="https://badges.pufler.dev/visits/SimplyVoid/startpage?style=for-the-badge&color=91e6b1&logoColor=white&labelColor=0B0F10"/>
-   <br>
+	<img src="https://badges.strrl.dev/visits/simplyvoid/startpage?style=for-the-badge&color=aa759f&logoColor=white&labelColor=151515"/>
+  <br>
 </div>
 
 <p/>
 
 <h2></h2>
 
-## ❖ startpage <img alt="" align="right" src="https://badges.pufler.dev/updated/WahidIslamLinad/startpage?style=for-the-badge&color=91e6b1&logoColor=white&labelColor=0B0F10"/>
+## ❖ startpage <img align="right" src="https://img.shields.io/tokei/lines/github/simplyvoid/startpage?style=for-the-badge&color=90a959&logoColor=white&labelColor=151515"/>
 
 Yet another minimal startpage:
 - Font: iosevka web
