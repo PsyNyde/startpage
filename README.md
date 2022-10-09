@@ -47,7 +47,7 @@ Yet another minimal startpage:
 - Find the extension and copy the manifest url
 - Go into the preferences and set the homepage as the manifest url but replace the end of the url with index.html instead of `manifest.json`
 
-### ❖ Preview:
+### ❖ Preview: <img align=right src="https://www.codefactor.io/repository/github/simplyvoid/startpage/badge">
 <!--<details>
 <summary><samp>extend</samp></summary> -->
 	
