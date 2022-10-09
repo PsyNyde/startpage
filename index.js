@@ -37,7 +37,7 @@ choosePic();
 //* Search box
 const f = document.getElementById("form");
 const q = document.getElementById("query");
-const se = "https://yetanothergoogle.herokuapp.com/search?q=";
+const se = "https://google.com/search?q=";
 
 function submitted(event) {
 	event.preventDefault();
